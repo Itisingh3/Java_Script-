@@ -1,0 +1,8 @@
+* To run the javascript in terminal, use nodejs.
+
+* Documentation of javascript is in ECMASCRIPT "tc39.es"
+
+* JS is dynamically typed language which means that the type of variable is determined at runtime , not during compilation.
+ Don't need to explicitly defined the data type.
+
+ * `` This symbol is know as backticks.
