@@ -6,3 +6,12 @@
  Don't need to explicitly defined the data type.
 
  * `` This symbol is know as backticks.
+
+ * JavaScript Exectuion Context
+  1. Global exectuion Context
+  2. Function Exectuion Context
+  3. Eval Exectuion Context
+
+  {} -> Memory Creation Phase  (Only memory allocated)
+     -> Exectuion phase (actual exectuion)
+     
