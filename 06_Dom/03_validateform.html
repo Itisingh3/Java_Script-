@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function validateform(){
+            let x=document.forms["myform"]["fname"].value;
+            if(x =="")alert("Fill it:");
+            else alert("submitted");
+        }
+    </script>
+</head><input type="text" name="fname" value="Harry">
+<body>
+    <h2>JavaScrpit</h2>
+    <form name="myform" action="" onsubmit="return validateform()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" name="submit">
+    </form>
+
+</body>
+</html>

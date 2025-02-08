@@ -1,0 +1,42 @@
+<!-- Dom
+1. When a web page is loaded , then browser creates a document object model of the page
+2. HTML DOM methods are actions and properties are value.
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h2>My page</h2>
+    <p class="intro">Finding Paragraph</p>
+    <p class="intro">This example of second Paragraph <b>getElementByTagNAme</b> method</p>
+    <p id="demo"></p>
+    <script>
+        // getElementById
+        document.getElementById("demo").innerHTML="Hello Worlds"
+
+        // getElementByTagName
+        const element=document.getElementsByTagName("p")
+        document.getElementById("demo").innerHTML = 'The text in first paragraph (index( 0) is : '+ element[0].innerHTML       //element[0] is basically first paragraph
+
+        // querySelector => it returns node list
+        const x=document.querySelectorAll("p.intro")
+        document.getElementById("demo").innerHTML = 'This first paragraph (index 0) with class ="intro" is: '+x[1].innerHTML
+    </script>
+</body>
+</html>

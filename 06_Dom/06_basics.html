@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(21, 21, 20); color: aliceblue;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+
+
+    <script>
+        // add li => unoptimised approach beacause it traverse whole tree everytime.
+        function addLanguage(langname){
+            const li=document.createElement('li');
+            li.innerHTML=`${langname}`
+            document.querySelector('.language').appendChild(li);
+        }
+        addLanguage("Python")
+        addLanguage("TypeScript")
+
+
+
+        // optimize approach
+        function addOptionalLangauge(langname){
+            const li=document.createElement('li')
+            // directly create text and immediately push the node without traversing the tree completely
+            li.appendChild(document.createTextNode(langname))
+            document.querySelector('.language').appendChild(li)
+        }
+        addOptionalLangauge('golang');
+
+
+
+        // you can edit the list
+        const secondLang=document.querySelector("li:nth-child(2)")
+        // secondLang.innerHTML="Mojo"
+        // OR
+        const newLi=document.createElement('li')
+        newLi.textContent="Mojo"
+        secondLang.replaceWith(newLi)
+
+
+
+        // another edit way
+        const firstLang=document.querySelector("li:first-child")
+        firstLang.outerHTML='<li>Java</li>'
+
+
+
+        // remove an element
+        const lastLang=document.querySelector('li:last-child');
+        // lastLang.remove()
+
+    </script>
+</body>
+</html>
