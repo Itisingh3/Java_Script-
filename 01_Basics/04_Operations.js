@@ -2,7 +2,7 @@ let value = 3
 let negvalue = -value;
 console.log(negvalue);
 
-
+console.log(2**3);   //2 to the power 3 
 let str1 = "Hello";
 let str2 = " Harry";
 let str3 = str1 + str2
@@ -29,7 +29,7 @@ console.table([num1, num2, num3]);
 // prefix and postfix
 
 
-
+// sometimes this type of code does not give correct results. That's why datatype of both should be same.
 // console.log("2">1);
 // console.log("02">1);
 
@@ -39,6 +39,7 @@ console.log(null==0);
 console.log(null>=0);
 
 
+// Always false
 console.log(undefined > 0 );
 console.log(undefined == 0 );
 console.log(undefined >= 0 );

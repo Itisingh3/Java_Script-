@@ -1,7 +1,7 @@
 "use strict";    //treat all js code as newer versions
 
 
-/* This line of gives error in terminal but not in browser's compiler.
+/* This line of code gives error in terminal but not in browser's compiler.
 alert(3+3)        
 */
 

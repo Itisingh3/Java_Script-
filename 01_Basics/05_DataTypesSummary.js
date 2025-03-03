@@ -38,7 +38,8 @@ array => object
 function=> function  (but it is know as function object or object function)
 object = > object
 symbol => symbol
-
+Number=> number
+String => string
 */ 
 
 

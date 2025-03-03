@@ -10,6 +10,8 @@ console.log(`Hello my name is  ${name} and my repocount is ${repocount}`);
 // Go in Browser and see all the stirngs method's.
 const gameName = new String('Potter');
 console.log(gameName[0]);
+console.log(gameName.__proto__);
+// methods of prototype
 console.log(gameName.length);
 console.log(gameName.toUpperCase());     // Original value had not change.
 console.log(gameName.charAt(2));
@@ -41,4 +43,4 @@ console.log(url.includes(':'));
 
 
 const temp = "Currently I am Reading Every Thing I know about love";
-console.log(temp.split('-'));
+console.log(temp.split(' '));     //split on the basis of space.
