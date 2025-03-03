@@ -5,7 +5,7 @@ let mydate = new Date();
 console.log(mydate.toString())
 console.log(mydate.toDateString())
 console.log(mydate.toLocaleString())
-console.log(typeof mydate);
+console.log(typeof mydate);          
 
 
 // let myCreateddate = new Date(2023,9,19);
@@ -32,5 +32,5 @@ console.log(newDate.getDate())
 
 
 newDate.toLocaleString('default',{
-    weekday : "long",           //it will give complete Monday
+    weekday : "long",           //it will give complete Monday rather than Mon
 })

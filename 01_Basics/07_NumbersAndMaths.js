@@ -32,7 +32,7 @@ console.log(Math.SQRT2)    // sqrt(2);
 console.log(Math.round(4.6));
 console.log(Math.ceil(4.2));
 console.log(Math.random());    // range [0,1]
-console.log((Math.random()*10) + 1);    // range [0,9] 
+console.log((Math.random()*10) + 1);    // range [1,9]  => +1 is to avoid 0
 // console.log(Math.floor(Math.random()*10) + 1);    // range [1,9]
 
 
