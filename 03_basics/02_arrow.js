@@ -8,7 +8,7 @@ const user={
 }
 
 user.welcomeMessage()
-user.username="sam"      //in fuction this is used that's why we can change the current context
+user.username="sam"      //in fuction username is used that's why we can change the current context.
 user.welcomeMessage() 
 
 
@@ -33,8 +33,9 @@ const chai=function(){
     console.log(this.username)
 }
 chai()
-// this returns undefined
 */
+// this returns undefined
+
 
 
 
@@ -43,8 +44,8 @@ chai()
 /*
 const chai=()=>{
     let username="hit"
-    console.log(this)
-    console.log(this.username)
+    console.log(this)      //{}=> empty object
+    console.log(this.username)      //undefined
 }
 chai()
 */
