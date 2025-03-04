@@ -7,6 +7,8 @@ const mySym=Symbol("key1");
 const JsUser={
     name:"Harry",
     "fullname":"Harry Potter",
+    // Using [mySym] ensures the key is a symbol, which means it is unique and prevents accidental name collisions.
+    // Without [], it becomes a regular string property.
     [mySym]:"key1",           // [] because data type of symbol should not be change.  and without [] its data type will changed
     age: 12,
     email: "Harray@hogwards.com",
@@ -34,7 +36,7 @@ JsUser.greeting = function(){
     console.log("HEllo Js User");
 }
 JsUser.greetingtwo = function(){
-    console.log(`HEllo Js USer ,${this.name}`);
+    console.log(`HEllo Js USer ,${this.name}`);      //it takes the value of name which is menetion in the object already.
 }
 // console.log(JsUser.greeting);
 console.log(JsUser.greeting());

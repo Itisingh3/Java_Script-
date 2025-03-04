@@ -2,7 +2,7 @@ function add(a,b){
     return a+b
 }
 console.log(add(3,4))
-// console.log(add(3+"4"))
+console.log(add(3+"4"))  //undefined is returned by funtion add
 
 const result= add(3,5)
 console.log(result);
@@ -38,7 +38,7 @@ const user={
     username:"Harry",
     price:199
 }
-// sometimes programmer don't know that which type of key is present in object so in that this could be problem
+// sometimes programmer don't know that which type of key is present in object so in that case this code will create problem.
 function handleObject(anyobject){
     console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
 }

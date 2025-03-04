@@ -4,14 +4,15 @@
 // nonsingleton object
 const user = {}
 
-user.name="abs";
-user.age=25;
+user.name="Vasudev Krishna";
+user.age=0;
 console.log(Object.keys(user))     //dataype of the returned value is in array.
 console.log(Object.values(user));
 console.log(Object.entries(user))   //all entries consist in an array.
 console.log(user.hasOwnProperty('name'))      //return true or false for the keys present or not.
 
 
+// nested objects
 const regularUser={
     email:"some@gmail.com",
     fullname:{
@@ -22,7 +23,7 @@ const regularUser={
     }
 }
 console.log(regularUser.fullname.userfullname.firstname)
-// console.log(regularUser.fullname?.userfullname.firstname)     //?in case somthing is not exist in the objects
+// console.log(regularUser.fullname?.userfullname.firstname)     // ? is used to ensure that is key:value pairs is exist or not in the objects
 
 
 
@@ -50,4 +51,5 @@ const users=[
 
 
 
-console.log(users[1].email)
+console.log(users[1])
+// console.log(users[1].email)

@@ -3,7 +3,7 @@ const arr2=["spider","batman"];
 
 // push() merges the array into original array
 // arr1.push(arr2);
-// console.log(arr1);    //array contain array "array take s another array as data"
+// console.log(arr1);    //array contain array "array takes another array as data"
 
 
 // concat return the new array 
@@ -27,7 +27,7 @@ console.log(real_another_array)
 
 console.log(Array.isArray("Harry"));
 console.log(Array.from("Harry"));    //convert it into the array
-console.log(Array.from({name: "Harry"}))     //can't convert directly into the array.
+console.log(Array.from({name: "Harry"}))     //can't convert directly into the array. So it returns []
 
 
 let a=1;
