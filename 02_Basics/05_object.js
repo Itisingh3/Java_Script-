@@ -6,7 +6,8 @@ const course={
 // 1. way
 // course.courseteacher
 
-/*2.Object Destructuring
+/*2. way
+Object Destructuring
 Destructuring extracts the courseteacher property from the course object into a separate variable.
 equivalent to: const courseteacher = course.courseteacher;
 */

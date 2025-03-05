@@ -1,5 +1,5 @@
 const coding=["js","ruby","java","python"]
-// forEach function calls a function for each Element in an array
+// forEach() calls a function for each Element in an array
 // forEach method is not executed for empty elements
 // call back function have no name and it can take an argument which points to the element of array.
 // return value of this function is undefined

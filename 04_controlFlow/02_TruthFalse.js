@@ -37,7 +37,10 @@ let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
 // val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20
+// val1 = null ?? 20 ?? 100
+// val1 = null ?? null ?? 100
+// val1 = null ?? null ?? null
+val1 = null ?? undefined ?? 10
 console.log(val1);
 
 

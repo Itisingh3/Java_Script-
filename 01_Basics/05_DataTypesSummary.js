@@ -1,6 +1,4 @@
 // primitive
-
-// These all are call by reference
 //  7 Types : stirng , Number , Boolean, null ,  undefined, symbol, Bigint
 
 
@@ -21,14 +19,16 @@ let myobj={
     name:"Iti",
     age : 23,
 }
-
+// console.log(myobj);
 
 
 // functions => function(){}
 let myfunc= function(){
     console.log("Myfunction");
+    return 0;
 }
-
+console.log(myfunc);    //function insides will be executed.
+console.log(myfunc());  //functions return value is printed;
 
 // Return types of variables
 /*

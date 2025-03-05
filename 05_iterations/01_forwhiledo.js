@@ -27,7 +27,7 @@ let myArray = ["flash", "batman", "superman"]
 //console.log(myArray.length);
 for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
-    //console.log(element);
+    // console.log(element);
     
 }
 
@@ -74,7 +74,7 @@ let arr = 0
 while (arr < myArray2.length) {
     //console.log(`Value is ${myArray2[arr]}`);
     arr = arr + 1
-}
+} 
 
 let score = 11
 

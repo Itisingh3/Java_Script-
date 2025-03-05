@@ -3,7 +3,7 @@
 // [{},{}]     => objects in array
 
 
-// *********  traversing the array with the help of iterator
+// *********  traversing the array with the help of iterator **************
 const arr=[1,2,3,4]
 for (const num of arr){
     // console.log(num)
@@ -11,7 +11,7 @@ for (const num of arr){
 
 
 
-// *********  traversing the string through iterator
+// *********  traversing the string through iterator *****************
 const greetings="Hello World!"
 for(const greet of greetings){
     // console.log(`Each char is ${greet}`)
@@ -20,7 +20,7 @@ for(const greet of greetings){
 
 
 
-// ********  Maps
+// **********  Maps ************
 const map = new Map()
 map.set('IN',"India")
 map.set('USA',"United states of America")
@@ -41,7 +41,7 @@ for(const key in map){
 
 
 
-// **********  traverse the object through the iterator is not applicabe.
+// ****************  traverse the object through the iterator is not applicable. ******************
 const myObject = {
     key1:'abc',
     key2:'def'
@@ -53,12 +53,10 @@ for(const [key,value] of myObject){
 
 // another way to traverse the object
 for(const key in myObject){
-    // console.log(`${key} is ${myObject[key]}`)      // this provides the error
+    console.log(`${key} is ${myObject[key]}`)      // this provides the error
 }
 */
-
-
-
-
-
-// **********  
+// only way to traverse the object.
+console.log(myObject)
+console.log(Object.keys(myObject))
+console.log(Object.values(myObject))

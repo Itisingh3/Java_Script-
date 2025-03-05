@@ -1,4 +1,4 @@
-// singleton object
+// singleton object made only using constructor but not using literals.
 // const user= new Object()
 
 // nonsingleton object
@@ -23,7 +23,7 @@ const regularUser={
     }
 }
 console.log(regularUser.fullname.userfullname.firstname)
-// console.log(regularUser.fullname?.userfullname.firstname)     // ? is used to ensure that is key:value pairs is exist or not in the objects
+console.log(regularUser.fullname?.userfullname.firstname)     // ? is used to ensure that is key:value pairs is exist or not in the objects otherwise it provides undefined.
 
 
 

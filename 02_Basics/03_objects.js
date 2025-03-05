@@ -1,5 +1,3 @@
-// singleton => made only using constructor but not using literals.
-
 const mySym=Symbol("key1");
 
 
@@ -24,7 +22,7 @@ console.log(JsUser["email"]);
 
 console.log(JsUser[mySym]);          //only way to acess the symbole in jsUser.
 
-JsUser.email="Harry@howards.gmail.com";
+JsUser.email="Harry@hogwards.gmail.com";
 // Object.freeze(JsUser)       //Now no elements of objects will be changed.
 JsUser.email="Harry@hogwards.com";
 console.log(JsUser);
