@@ -1,6 +1,9 @@
 /* if
 2 =="2" =>true
 2 ==="2" =>false
+false == 0 =>true
+false == ''
+0 == '' =>true
 */
 
 

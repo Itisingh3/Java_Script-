@@ -29,10 +29,10 @@ function printMe(item){
 2. currentValue 
 3. index : it is optional
 4. arr : the array of the current value
-5. thisValue : default "undefind" , alue passed to the function as its this value.
+5. thisValue : default "undefind" , value passed to the function as its this value.
 */
 coding.forEach((item,index,arr)=>{
-    // console.log(item,index,arr)
+    console.log(item,index,arr)
 })
 
 
