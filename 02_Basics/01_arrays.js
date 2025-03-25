@@ -10,7 +10,7 @@ const myarr2=new Array(1,2,3,4);
 // myarr.pop();        // pushed element will be pop
 
 // myarr.unshift(0);     //shift the value to the right and then push a new element in the start.
-// myarr.shift()        //delete the added element in the start.
+// myarr.shift()        //delete the added element in the start and remaining elements will be shifted to the left.
 console.log(myarr);
 // console.log(myarr.includes(3));   // check whether element is present in array or not
 
@@ -18,10 +18,10 @@ console.log(myarr);
 
 // only type are changed and array will be same.
 const newarr= myarr.join()
-// console.log(myarr);
-// console.log(typeof myarr);
-// console.log(newarr);
-// console.log(typeof newarr)
+console.log(myarr);
+console.log(typeof myarr);
+console.log(newarr);
+console.log(typeof newarr)
 
 
 

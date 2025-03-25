@@ -1,5 +1,5 @@
 // primitive
-//  7 Types : stirng , Number , Boolean, null ,  undefined, symbol, Bigint
+//  7 Types : string , Number , Boolean, null ,  undefined, symbol, Bigint
 
 
 // it is unique even when you provide same strings.
@@ -30,7 +30,7 @@ let myfunc= function(){
 console.log(myfunc);    //function insides will be executed.
 console.log(myfunc());  //functions return value is printed;
 
-// Return types of variables
+// Return type of variables
 /*
 null => object
 undefined => undefined

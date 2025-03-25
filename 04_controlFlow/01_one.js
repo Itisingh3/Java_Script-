@@ -2,7 +2,7 @@
 2 =="2" =>true
 2 ==="2" =>false
 false == 0 =>true
-false == ''
+false == '' =>true
 0 == '' =>true
 */
 

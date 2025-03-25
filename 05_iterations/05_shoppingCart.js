@@ -1,5 +1,5 @@
 /*
-reduce() method retruns a single value the function accumulated result
+reduce() method returns a single value the function accumulated result
 it does not execute the function for empty array elements
 it does not the change the original element
 accumulated result from the last call of the callback function.

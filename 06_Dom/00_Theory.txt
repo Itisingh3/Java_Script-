@@ -26,7 +26,7 @@ After the creation phase completed, the execution phase begins where actual valu
 
 
 
-querySelectorAll()=>retrun NodeList (it have a forEach())
+querySelectorAll()=>return NodeList (it have a forEach())
 document.getElementByClassName() => returns a HTML Collection(it don't have a forEach())
 * You can convert the HTML Collection into an array to use map(), forEach().
 * textContent returns text which have display:none

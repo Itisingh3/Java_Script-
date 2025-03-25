@@ -16,6 +16,7 @@ const JsUser={
 
 // access objects => 2 ways
 // fullname is only accessed by second method
+console.log(JsUser["fullname"])
 // generlly we use . but in some cases [] will be used.
 console.log(JsUser.name);
 console.log(JsUser["email"]);
