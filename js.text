@@ -16,3 +16,11 @@
   {} -> Memory Creation Phase  (Only memory allocated)
      -> Exectuion phase (actual exectuion)
      
+*It is a client-side scripting language.
+* Nodejs is c++ and js. which is used for backend and server side scripting language.
+*JS engine is translater to run javascript eg. V8 etc.
+
+
+*  Node.js, a powerful JavaScript runtime environment, has empowered developers to build server-side applications using JavaScript.
+
+* Garbage collector is automatically present in javascript.

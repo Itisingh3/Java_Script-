@@ -1,0 +1,20 @@
+JAvascript: 1. synchronous
+            2. Single thread (default)
+Exectuion Context:
+            * Execute on line of data at a time.
+            * Sequential Exectuion.
+            * Call Stack , Heap.
+Blocking code:
+            * Block the flow of program.
+            * Read file synchronously.
+            * Exectuion will be code to perform some other functions.
+Non-blocking Code:
+            * Does not block Exectuion.
+            * Read file asynchronously.
+            * Does not block the exectuion of some other program...
+Kernal reads the file (any file) due to which the complete program waits until the completion of reading.
+
+Blocking and Non-blocking advantages are based ipon the use cases for example, if a person registers on some website then :
+            * non-blocking code gives success meassage instantly...
+            * blocking code gives success meassage after the registration...
+

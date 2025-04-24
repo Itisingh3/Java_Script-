@@ -35,3 +35,13 @@ let b=2
 let c=3;
 console.log(Array.of(a,b,c))
 
+
+
+
+
+
+const arr4=[10,20,30];
+arr4.map((num)=>{
+    console.log(num+1);
+})
+

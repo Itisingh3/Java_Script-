@@ -32,9 +32,16 @@ variables are set. And when the functions are called it creates a new 'Function 
 
 
 
-querySelectorAll()=>return NodeList (it have a forEach())
+querySelectorAll() => return NodeList (it have a forEach())
 document.getElementByClassName() => returns a HTML Collection(it don't have a forEach())
 * You can convert the HTML Collection into an array to use map(), forEach().
 * textContent returns text which have display:none
 * innerText returns only visible text
 * innerHtml returns html part also like <span></span>
+* querySelector returns only first matched class, id, tag name..
+* querySelectorAll returns all matched class, id, tag name..
+
+* window.open() => new window will be open.
+*appendChild() => 
+*AfterEnd, BeforeEnd, beforeBegin, 
+*conosole.log(document.baseURI);

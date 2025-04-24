@@ -46,3 +46,37 @@ console.log(teach)
 ]
 
 
+
+
+
+class Human{
+    // properties
+    age=13;
+    #wt=80;   //private
+    ht=180;
+    constructor(age,ht,wt){
+        this.age=age;
+        this.#wt=wt
+        this.ht=ht;
+    }
+    walking(){
+        console.log("I am walking...",this.#wt);
+    }
+    running(){
+        console.log("I am running...");
+    }
+    get fetchweight(){
+        return this.#wt;
+    }
+    /**
+     * @param {number} val
+     */
+    set modifyweight(val){
+        this.#wt=val;
+    }
+}
+let obj=new Human(50,190,101);
+console.log(obj.fetchweight())
+// error
+// console.log(obj.#wt);
+

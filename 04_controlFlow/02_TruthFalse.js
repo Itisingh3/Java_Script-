@@ -12,7 +12,7 @@ if (userEmail.length === 0) {
 
 /* 
 falsy values
-false, 0, -0, BigInt 0n, "", null, undefined, NaN
+false, 0, -0, BigInt 0n, "", null, undefined, NaN, ''
 */
 
 

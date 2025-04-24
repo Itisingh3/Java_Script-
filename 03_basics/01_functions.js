@@ -1,3 +1,12 @@
+// Functions can be  
+// 1. assign to variables
+// 2. passed as an arguments.
+// 3. return as a function
+// 4. used in data structures.
+// 5. used as property.... 
+
+
+
 function add(a,b){
     return a+b
 }
@@ -55,13 +64,29 @@ function returnSecondValue(getArray){
 console.log(returnSecondValue(myNewArray))
 
 
+function getmyName(firstname, lastname){
+    let fullname= firstname+" "+lastname
+    // let fullname= firstname+" "+lastname
+    return fullname
+}
+console.log(("Full name: ",getmyName("Harry","Potter")));
+console.log(("Full name: ",getmyName(8,9)));
 
 
+// normal functions
+let sqaure = function(num){
+    let ans=num**2;
+    return ans;
+}
+console.log(sqaure(3))
 
 
-
-
-
+// arrow functions
+let sqaure1 = (num)=>{
+    let ans=num**2;
+    return ans;
+}
+console.log(sqaure1(3))
 
 
 // ******************* static scoping and dynamic scoping *************************

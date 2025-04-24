@@ -9,8 +9,8 @@ alert(3+3)
 
 
 /*
-number => 2^53
-Bigint
+number
+Bigint => 2^53
 string
 boolean
 null => Standalone Value

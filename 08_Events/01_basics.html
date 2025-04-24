@@ -18,7 +18,7 @@
         </ul>
     </div>
     <script>
-        // without eventlistener , you will get less number of features. 
+        // without eventlistener (using onClick manually), you will get less number of features. 
         // document.getElementById('owl').onclick=function(){
         //     alert("owl clicked");
         // }
@@ -28,15 +28,52 @@
 
         // events
         // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+        // target, toElement, srcElement, currentTarget,
+        // clientX, clientY, screenX, screenY
+        // altkey, ctrlkey, shiftkey, keyCode
 
 
-     
-    document.getElementById('images').addEventListener('click',function(e){
+        // owl is present in images so when you click images "Images Clicked" printed in console...but when owl is clicked then "Owl Clicked" and "Images Clicked" both are printed in console...so to prevent this thing we should should stop the propagation which is in bubbling phase and "Images Clicked" will not be printed....
+
+
+
+        document.getElementById('images').addEventListener('click',function(e){
+        console.log("Images Clicked");
+        e.stopPropagation();
+    },false)
+
+    document.getElementById('owl').addEventListener('click',function(e){
         console.log("Owl Clicked");
         e.stopPropagation();
+    },false)
+
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault()
+        e.stopPropagation();
+        console.log("Google Clicked");
+    },false)
+
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        // let removeIT=e.target.parentNode
+
+        // if you click on li then complete images will be removed...
+        // removeIT.remove();
+        // OR
+        // so you can use this approach
+        // removeIT.parentNode.removeChild(removeIT)
+
+
+        console.log(e.target.tagName)
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id)
+            let removeIT=e.target.parentNode
+            removeIT.remove()
+        }
+
+
     },false)
     </script>
 </body>

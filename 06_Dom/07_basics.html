@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // const mylist=document.querySelector('ui');
+        // const flist=document.querySelector('li');
+        // flist.style.backgroundColor="green"
+
+        // const tempList=document.querySelector('ul')
+        // tempList.forEach(function(l){
+        //     l.style.backgroundColor='green'
+        // })
+
+        const temp=document.getElementsByClassName('list-item');    //it returns html collection
+        // convert this HTML Collection into array
+        const myConvertedArray=Array.from(temp)
+    </script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque officiis iure. Aspernatur magni aliquam, rerum dignissimos impedit accusamus illo placeat dolore ut ea neque veniam sint inventore assumenda esse?</p>
+    <ul>
+        <li class="list-item">Food</li>
+        <li class="list-item">Books</li>
+        <li class="list-item">Music</li>
+        <li class="list-item">Cricket</li>
+    </ul>
+</body>
+</html>

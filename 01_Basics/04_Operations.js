@@ -46,3 +46,17 @@ console.log(undefined >= 0 );
 
 // === also check data type.
 console.log("2" === 2);
+
+
+
+// === "Strict Equality"
+// == "Loose Equality"
+// !=   !==
+
+let sentence= "Hello Ji \"Kaise\" ho sare"
+console.log(sentence);
+
+
+let sentence1= "Hello \\Ji \\Kaise\\ \ho \sare"
+let words = sentence.split('\\');
+console.log(words);

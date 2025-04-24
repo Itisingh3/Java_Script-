@@ -35,3 +35,8 @@ console.log("Sliced array ",myn1);
 const myn2=myarr.splice(1,3);
 console.log("Original Array ",myarr)
 console.log("Spliced array ",myn2);
+
+
+
+const arr=new Array('Harry',1,true);
+console.log(arr);
