@@ -4,17 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h2,h1{
+            font-size: 2.5rem;
+        }
+        p,li{
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
     <h1 style="font-size: 2.5rem;">Promise</h1>
-    <p style="font-size: 2rem;">A promise is one of these states....
+    <p >A promise is one of these states....
         <br>
-        <h2 style="font-size: 2.5rem;">Pending: </h2><p style="font-size: 2rem;">Intial state, neither fulfilled nor rejected.</p>
-        <h2 style="font-size: 2.5rem;">Fulfilled: </h2><p style="font-size: 2rem;">Meaning that the operation was completed successfully.</p>
-        <h2 style="font-size: 2.5rem;">Rejected: </h2><p style="font-size: 2rem;">Meaning that the operation failed.</p>
+        <h2>Pending: </h2><p>Intial state, neither fulfilled nor rejected.</p>
+        <h2>Fulfilled: </h2><p>Meaning that the operation was completed successfully.</p>
+        <h2>Rejected: </h2><p>Meaning that the operation failed.</p>
         <p>Promise generate the concept like .then() and .catch()</p>
         <p>Node.js give support to implement the promise.</p>
+        <h2>Theory</h2><p>"Producing code" is code that can take some time
+            <br>
+            "Consuming code" is code that must wait for the result
+            <br>
+            Promise.then() takes two arguments, a callback for success and another for failure.
+            Both are optional, so you can add a callback for success or failure only.
+        </p>
+        <h2>Fetch API()</h2><p>Intially XMLHttpRequest() was designed to fetch xml data via http.But , it was difficult to do. Fetch API is library which came to overcome the difficulty level....NodeJs included the fetch api in 2022...You can fetch any type of data ....
+            <br>
+            <code>
+                <br>
+                fetch('https://jsonplaceholder.typicode.com/users')
+                <br>
+                .then((response)=>{
+                    <br>
+                 return response.json()
+                 <br>
+                })
+                <br>
+                .then((data)=>{
+                    <br>
+                console.log(data)
+                <br>
+                })
+                <br>
+                .catch((error)=>console.log(error))
+                <br>
+            </code>
+            <br>
+            The image shows fetch() in Web API.... Microtask queue priority is made to fetch the data ......
+            <br>
+            response = fetch('something')
+            <br>
+            Fetch do:
+            <li>Reserved memory named data in global memory</li>
+            <li>In global memory response: is generated if data request is fullfilled</li>
+            <li>Resolved: Onfufilled[]</li>
+            <li>Rejected: Onrejection[]</li>
+            <li>Handels Web Browser API or node API: and a network request is created is resolved or rejected.</li>
+        </p>
     </p>
-
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+    <script>
+        // lexical scoping
+        function Outer(){
+            let username="abcd"
+            function inner(){
+                let secret = "review"
+                console.log(username)           // can access the username
+            }
+
+            // can't access the secret variable....
+            function innertow(){
+                console.log(username)
+                console.log(secret)
+            }
+            inner();
+        }
+        Outer()
+        // console.log(username);               //cant't access the username
+
+
+
+
+
+
+        // closure
+        function init(){
+            let name ="Mozilla";
+            function displayName(){
+                console.log(name);
+            }
+            return displayName();
+        }
+        // complete scop will be sent i.e outer and inner ...init() and displayName()
+        const myfunc =init();
+        myfunc();
+    </script>
+    <script>
+        // document.getElementById("orange").onclick=function(){
+        //     document.body.style.backgroundColor=`orange`
+        // }
+        // document.getElementById("green").onclick=function(){
+        //     document.body.style.backgroundColor=`green`
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor=`${color}`
+
+            // this function have access of color 
+            return function(){
+                document.body.style.backgroundColor=`${color}`
+            }
+        }
+        document.getElementById('orange').onclick=clickHandler("orange")
+        document.getElementById('green').onclick=clickHandler("green")
+    </script>
+</body>
+
+</html>
